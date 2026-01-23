@@ -21,7 +21,7 @@ the current timetable for this case:
   ISJA application.
 - **(sometime after):** President of ART will decide on the ISJA
   application.
-- **by 2026-01-23:** parties must file *hearing certificates* for
+- **by 2026-02-16:** parties must file *hearing certificates* for
   July-September (this means we expect to be ready for the
   substantive hearing to be held during the certified period).
 - **by 2026-04-12:** Services Australia must provide their *Statement

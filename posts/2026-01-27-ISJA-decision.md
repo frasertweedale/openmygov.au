@@ -18,7 +18,14 @@ yourself!  I have finally updated this site with an [archive of
 documents][files] from the very beginning (back in 2021!) until now.
 Because legal reasons I cannot publish *everything*, but I have
 still included descriptions of the files I can't publish yet.
-It will make interesting reading 
+
+Thanks to all supporters and especially the **many new supporters**
+who joined in the last week.  We are nearly 50% of the way to the
+target... but with **only one week to go!**  *\*gulp\**   Please
+continue to spread awareness about this campaign.  If you didn't
+pledge yet but were considering it, now is the time.
+
+—Fraser
 
 [files]: /archive.html#files
 [ISJA decision]: /files/2026-01-23-ART-ISJA-decision-reasons.pdf

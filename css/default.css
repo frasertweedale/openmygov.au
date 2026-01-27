@@ -116,21 +116,27 @@ div.info {
 
 table {
     margin: auto;
+    margin-top: 12px;
     border-collapse: collapse;
 }
 
 td, th {
-    padding: 5px;
+    padding: 6px;
     border-bottom: 1px solid lightgrey;
 }
 
 th {
     border-top: 1px solid lightgrey;
+    background-color: #f0f0f0;
 }
 
 p {
     overflow-wrap: break-word;
     hyphens: auto;
+}
+
+table#case-files td:nth-child(2) {
+    text-align: center;
 }
 
 div p:first-child {

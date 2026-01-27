@@ -1,3 +1,4 @@
+<h2>Updates (by date)</h2>
 <ul>
     $for(posts)$
         <li>
@@ -5,3 +6,68 @@
         </li>
     $endfor$
 </ul>
+
+<h2 id="files">Case files</h2>
+
+<div class="note">
+Some documents are marked <strong><em>N/A</em></strong> because
+publication would breach the <em>implied undertaking</em> that
+documents obtained in the course of a proceeding will not used for
+any other purpose.  I might be able to publish some of them in the
+future.
+</div>
+
+<table id="case-files">
+
+    <tr><th colspan="3">ART merits review - 2025/4916</th></tr>
+    $for(filesART)$
+    <tr>
+        <td>$date$</td>
+        $if(filename)$
+        <td><a href="/files/$filename$">download</a></td>
+        $else$
+        <td><em>N/A</em></td>
+        $endif$
+        <td>$desc$</td>
+    </tr>
+    $endfor$
+
+    <tr><th colspan="3">Information Commissioner review - OAIC MR22/00021</th></tr>
+    $for(filesOAIC)$
+    <tr>
+        <td>$date$</td>
+        $if(filename)$
+        <td><a href="/files/$filename$">download</a></td>
+        $else$
+        <td><em>N/A</em></td>
+        $endif$
+        <td>$desc$</td>
+    </tr>
+    $endfor$
+
+    <tr><th colspan="3">Internal review - LEX 64833</th></tr>
+    $for(filesIR)$
+    <tr>
+        <td>$date$</td>
+        $if(filename)$
+        <td><a href="/files/$filename$">download</a></td>
+        $else$
+        <td><em>N/A</em></td>
+        $endif$
+        <td>$desc$</td>
+    </tr>
+    $endfor$
+
+    <tr><th colspan="3">Original FOI request - LEX 63435</th></tr>
+    $for(filesOrig)$
+    <tr>
+        <td>$date$</td>
+        $if(filename)$
+        <td><a href="/files/$filename$">download</a></td>
+        $else$
+        <td><em>N/A</em></td>
+        $endif$
+        <td>$desc$</td>
+    </tr>
+    $endfor$
+</table>

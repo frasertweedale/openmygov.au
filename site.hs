@@ -5,6 +5,8 @@ import Text.Pandoc.Definition
 import Text.Pandoc.Walk (query, walk)
 import Hakyll
 
+import Files
+
 
 siteTitle :: String
 siteTitle = "END SECURITY BY OBSCURITY"
@@ -73,14 +75,31 @@ main = hakyll $ do
     route idRoute
     compile $ do
       posts <- recentFirst =<< loadAll ("posts/*" .&&. hasNoVersion)
-      let archiveContext =
-            listField "posts" context (pure posts)
-            <> constField "title" "Archive"
-            <> context
+      _ <- load "Files.hs" :: Compiler (Item ()) -- recompile on change
+
+      let
+        archiveContext =
+          listField "posts" context (pure posts)
+          <> listField "filesART" fileContext (traverse makeItem fileListART)
+          <> listField "filesOAIC" fileContext (traverse makeItem fileListOAIC)
+          <> listField "filesIR" fileContext (traverse makeItem fileListIR)
+          <> listField "filesOrig" fileContext (traverse makeItem fileListOrig)
+          <> constField "title" "Archive"
+          <> context
+
       makeItem ""
         >>= loadAndApplyTemplate "templates/archive.html" archiveContext
         >>= loadAndApplyTemplate "templates/default.html" archiveContext
         >>= relativizeUrls
+
+  match "Files.hs" $ do
+    -- make a dependency on Files.hs to trigger reloads of
+    -- dependent pages
+    compile $ makeItem ()
+
+  match "files/*" $ do
+    route idRoute
+    compile copyFileCompiler
 
   match "templates/*" $ compile templateCompiler
 

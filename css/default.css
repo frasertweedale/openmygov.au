@@ -39,6 +39,11 @@ div#header #navigation a {
     clear: both;
 }
 
+#postContent {
+    border-bottom: solid 2px black;
+    margin-bottom: 12px;
+}
+
 .footer {
     border-top: solid 2px black;
     color: #555;
@@ -236,17 +241,30 @@ pre.command + pre.output {
     box-shadow: 0 0 12px blue;
 }
 
-.recent-box {
+#recent {
     display: inline-block;
     vertical-align: top;
+    width: 50%;
+}
+
+#recent h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.recent-box {
+    display: block;
     margin: 10px;
-    width: 25%;
     padding: 10px;
     text-decoration: none;
-    border: 2px solid blue;
+    border: 1px solid blue;
     border-radius: 5px;
 }
 
+#recent a.more {
+    display: block;
+    text-align: center;
+}
 
 
 /*** CODE FOR COPY BUTTONS ***/

@@ -42,7 +42,6 @@ main = hakyll $ do
             <> constField "title" "Home"
             <> context
       pandocCompiler
-        >>= loadAndApplyTemplate "templates/post.html" homeContext
         >>= loadAndApplyTemplate "templates/landing.html" homeContext
         >>= loadAndApplyTemplate "templates/default.html" homeContext
         >>= relativizeUrls
@@ -64,11 +63,15 @@ main = hakyll $ do
   match "posts/*" $ do
     route $ setExtension "html"
     compile $ do
+      posts <- take 3 <$> loadRecentPosts
+      let postContext =
+            listField "posts" context (pure posts)
+            <> context
       ident <- getUnderlying
       loadBody (setVersion (Just "recent") ident)
         >>= makeItem
-        >>= loadAndApplyTemplate "templates/post.html" context
-        >>= loadAndApplyTemplate "templates/default.html" context
+        >>= loadAndApplyTemplate "templates/post.html" postContext
+        >>= loadAndApplyTemplate "templates/default.html" postContext
         >>= relativizeUrls
 
   create ["archive.html"] $ do

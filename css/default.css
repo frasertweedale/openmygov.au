@@ -146,6 +146,10 @@ p {
     hyphens: auto;
 }
 
+table#case-files td:nth-child(1) {
+    white-space: nowrap;
+}
+
 table#case-files td:nth-child(2) {
     text-align: center;
 }

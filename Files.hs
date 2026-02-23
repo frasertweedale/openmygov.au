@@ -11,7 +11,7 @@ data File = File
 fileContext :: Context File
 fileContext =
   field "filename"
-    (maybe (noResult "unavailable") pure . fileName . itemBody)
+    (maybe (noResult "unavailable") (pure . toUrl . ("files/" <>)) . fileName . itemBody)
   <> field "date" (pure . fileDate . itemBody)
   <> field "desc" (pure . fileDesc . itemBody)
 

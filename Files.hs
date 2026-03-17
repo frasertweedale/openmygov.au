@@ -17,8 +17,10 @@ fileContext =
 
 fileListART :: [File]
 fileListART =
-  [ File "2026-02-24" (Just "2026-02-24-scope-reduction-agreement.pdf")
-      "Agreement and request for consent order to limit scope of request \
+  [ File "2026-03-03" (Just "2026-03-03-ART-consent-order-doc-scope.pdf")
+      "Consent order limiting scope of review to the Android source code."
+  , File "2026-02-24" (Just "2026-02-24-scope-reduction-agreement.pdf")
+      "Agreement and request for consent order to limit scope of review \
       \to the Android source code."
   , File "2026-02-04" (Just "2026-02-04-ART-registry-transfer-confirmation.pdf")
       "Confirmation of transfer to the ART Melbourne registry \

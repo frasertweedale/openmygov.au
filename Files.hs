@@ -17,9 +17,13 @@ fileContext =
 
 fileListART :: [File]
 fileListART =
-  [ File "2026-03-04" (Just "2026-03-04-case-conference-request.pdf")
+  [ File "2026-04-01" (Just "2026-04-01-confidentiality-order-hearing-listing.pdf")
+      "Listing notice—interlocutory hearing, Monday 2026-04-13—contested \
+      \confidentiality order application."
+  , File "2026-03-04" (Just "2026-03-04-case-conference-request.pdf")
       "Letter to AGS (solicitor for Respondent) proposing case conference \
-      \to try to narrow the issues for determination by the Tribunal."
+      \to try to narrow the issues for determination by the Tribunal \
+      \(Respondent declined)."
   , File "2026-03-03" (Just "2026-03-03-ART-consent-order-doc-scope.pdf")
       "Consent order limiting scope of review to the Android source code."
   , File "2026-02-24" (Just "2026-02-24-scope-reduction-agreement.pdf")

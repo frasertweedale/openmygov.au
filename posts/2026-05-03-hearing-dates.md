@@ -4,7 +4,7 @@ There have been some changes to the timeline for my ART proceeding.
 The substantive hearing has been listed for **Wednesday 2–Friday 4
 September**, in person in Melbourne.  There is also an online
 hearing on **Friday 29 May** to decide the confidentiality orders
-sought by Service Australia over particular evidence.  Read on for
+sought by Services Australia over particular evidence.  Read on for
 full details.
 
 These are **open hearings**, so members of the public can

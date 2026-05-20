@@ -24,9 +24,11 @@ Here is the current case timeline:
   and Contentions (SOFIC) and evidence are due.
 - **29 May 2026, 09:00 UTC+10**: Interlocutory Hearing by
   video—confidentiality order application.
-- **23 June 2026**: My SOFIC and evidence due
-- **21 July 2026**: Services Australia may file a further written
+- **17 July 2026**: My SOFIC and evidence due
+- **7 August 2026**: Services Australia may file a further written
   reply by this date.
+- **12 August 2026**: joint tender bundle and joint witness schedule
+  due
 - **2–4 September 2026, 10:00 UTC+10**: The substantive hearing, in
   person at 15 William Street, Melbourne.  The hearing is listed for
   3 days, starting at 10:00 each day.

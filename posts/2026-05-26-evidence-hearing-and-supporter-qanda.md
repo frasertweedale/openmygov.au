@@ -23,8 +23,8 @@ Here's a brief update of what is happening:
   to assist the Tribunal.
 
 So, come Friday there will be much to discuss and update you on!  To
-become a supporter, head to my [Chuffed campaign].  Thanks to all
-who have contributed, no matter how small the amount.  I look
-forward to meeting you on Friday evening.
+become a supporter, head to my [Chuffed campaign][]{target=_blank}.
+Thanks to all who have contributed, no matter how small the amount.
+I look forward to meeting you on Friday evening.
 
 [Chuffed campaign]: https://chuffed.org/project/mygov-app-source-code-foi-review

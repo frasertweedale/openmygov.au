@@ -19,12 +19,12 @@ fileListART :: [File]
 fileListART =
   [ File "2026-04-21" Nothing
       "ART lists substantial hearing for 2–4 September"
-  , File "2026-04-14" Nothing
+  , File "2026-04-14" (Just "2026-04-14-ART-updated-listing-confidentiality-order-hearing.pdf")
       "ART moves confidentiality order hearing to Friday 2026-05-29, 09:00"
   , File "2026-04-13" (Just "2026-04-13-ART-directions-updated-timeline.pdf")
       "ART varies the timeline: SA's SOFIC and evidence now due 25 May, \
       \mine due 17 July"
-  , File "2026-04-08" Nothing
+  , File "2026-04-08" (Just "2026-04-08-ART-updated-listing-confidentiality-order-hearing.pdf")
       "ART moves confidentiality order hearing to Friday 2026-04-17"
   , File "2026-04-01" (Just "2026-04-01-confidentiality-order-hearing-listing.pdf")
       "Listing notice—interlocutory hearing, Monday 2026-04-13—contested \

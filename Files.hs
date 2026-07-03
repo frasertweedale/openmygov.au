@@ -17,8 +17,26 @@ fileContext =
 
 fileListART :: [File]
 fileListART =
-  [ File "2026-04-21" Nothing
-      "ART lists substantial hearing for 2–4 September"
+  [ File "2026-06-22" Nothing
+      "Services Australia's reply submissions in relation to \
+      \confidentiality order application"
+  , File "2026-06-17" Nothing
+      "Re-filing of my submissions of 2026-06-10 with minor corrections"
+  , File "2026-06-10" Nothing
+      "My submissions opposing the confidentiality order application \
+      \(re-filed on 2026-06-17 with minor corrections"
+  , File "2026-05-29" Nothing
+      "ART listing notice for resumed confidentiality order hearing, \
+      \Thursday 9 July, 09:00"
+  , File "2026-05-28" Nothing
+      "Services Australia's submissions in support of their confidentiality \
+      \order application"
+  , File "2026-05-26" Nothing
+      "Services Australia's Statement of Facts, Issues and Contentions (SFIC)"
+  , File "2026-05-25" Nothing
+      "Services Australia filed some evidence"
+  , File "2026-04-21" Nothing
+      "ART lists substantive hearing for 2–4 September"
   , File "2026-04-14" (Just "2026-04-14-ART-updated-listing-confidentiality-order-hearing.pdf")
       "ART moves confidentiality order hearing to Friday 2026-05-29, 09:00"
   , File "2026-04-13" (Just "2026-04-13-ART-directions-updated-timeline.pdf")

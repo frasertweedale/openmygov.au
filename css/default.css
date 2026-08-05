@@ -157,6 +157,19 @@ table#case-files td:nth-child(2) {
     text-align: center;
 }
 
+table#case-files .who-T {
+    background-color: #fffbeb;
+}
+table#case-files .who-A {
+    background-color: #f0f7ff;
+}
+table#case-files .who-R {
+    background-color: #fff5f5;
+}
+table#case-files .who-J {
+    background-color: #f8f5ff;
+}
+
 div p:first-child {
     margin-top: 0;
 }
@@ -379,11 +392,16 @@ pre {
     table#case-files tbody {
         display: block;
     }
+    table#case-files th {
+        width: 100%;
+        border-bottom: 0px;
+        text-wrap: wrap;
+    }
     table#case-files tr {
         display: flex;
         flex-wrap: wrap;
         border-bottom: 1px solid lightgrey;
-        padding: 4px 0;
+        padding: 17px 0 0 0;
     }
     table#case-files td {
         border-bottom: none;

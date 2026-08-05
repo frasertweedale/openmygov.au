@@ -17,14 +17,33 @@ fileContext =
 
 fileListART :: [File]
 fileListART =
-  [ File "2026-06-22" Nothing
-      "Services Australia's reply submissions in relation to \
+  [ File "2026-08-03" (Just "2026-08-03-ART-confidentiality-order-decision.pdf")
+      "ART decision and reasons granting confidentiality order \
+      \application over McDonald closed affidavit"
+  , File "2026-07-31" Nothing
+      "Tweedale Statement of Facts Issues and Contentions"
+  , File "2026-07-31" Nothing
+      "Tweedale affidavit"
+  , File "2026-07-31" Nothing
+      "Expert witness report: Prof. Vanessa Teague"
+  , File "2026-07-31" Nothing
+      "Expert witness report: Dr Peter Serwylo"
+  , File "2026-07-09" (Just "2026-07-09-ART-directions-confidentiality-timeline.pdf")
+      "ART Direction that Respondent must by 15 July give to Tribunal a \
+      \document setting out which information in McDonald closed affidavit \
+      \is already disclosed elsewhere"
+  , File "2026-07-09" (Just "2026-07-09-ART-directions-amended.pdf")
+      "ART minor variation to Directions of 29 May 2026"
+  , File "2026-07-02" Nothing
+      "Tweedale affidavit in opposition to confidential order application"
+  , File "2026-06-22" Nothing
+      "Services Australia's reply submissions in support of \
       \confidentiality order application"
   , File "2026-06-17" Nothing
       "Re-filing of my submissions of 2026-06-10 with minor corrections"
   , File "2026-06-10" Nothing
-      "My submissions opposing the confidentiality order application \
-      \(re-filed on 2026-06-17 with minor corrections"
+      "Tweedale submissions opposing the confidentiality order application \
+      \(re-filed on 2026-06-17 with minor corrections)"
   , File "2026-05-29" Nothing
       "ART listing notice for resumed confidentiality order hearing, \
       \Thursday 9 July, 09:00"
@@ -34,7 +53,11 @@ fileListART =
   , File "2026-05-26" Nothing
       "Services Australia's Statement of Facts, Issues and Contentions (SFIC)"
   , File "2026-05-25" Nothing
-      "Services Australia filed some evidence"
+      "Open affidavit of Mr Garrett McDonald, General Manager Cyber Security, \
+      \Services Australia"
+  , File "2026-05-25" Nothing
+      "Closed affidavit of Mr Garrett McDonald, General Manager Cyber Security, \
+      \Services Australia (redacted version received 2026-08-04)."
   , File "2026-04-21" Nothing
       "ART lists substantive hearing for 2–4 September"
   , File "2026-04-14" (Just "2026-04-14-ART-updated-listing-confidentiality-order-hearing.pdf")
@@ -63,10 +86,8 @@ fileListART =
       "Decision granting respondent's request for Tribunal's \
       \power to be exercised in the Intelligence and Security \
       \Jurisdictional Area (ISJA), and reasons"
-  , File "2026-01-23" (Just "2026-01-23-ART-ISJA-decision.pdf")
-      "Letter advising ISJA decision"
   , File "2026-01-15" (Just "2026-01-15-FT-ISJA-application-reply.pdf")
-      "My submissions opposing the ISJA application"
+      "Tweedale submissions opposing the ISJA application"
   , File "2025-12-23" Nothing -- "2025-12-23-SA-ISJA-application.pdf"
       "Respondent's Intelligence and Security Jurisdictional Area \
       \application"

@@ -40,14 +40,16 @@ fileListART =
       \is already disclosed elsewhere"
   , File T "2026-07-09" (Just "2026-07-09-ART-directions-amended.pdf")
       "ART minor variation to Directions of 29 May 2026"
-  , File A "2026-07-02" Nothing
-      "Tweedale affidavit in opposition to confidential order application"
+  , File A "2026-07-02" (Just "2026-07-02-FT-affidavit-public-domain.pdf")
+      "Tweedale affidavit in opposition to confidential order application, \
+      \setting out and explaining information about the App that is \
+      \in the public domain"
   , File R "2026-06-22" Nothing
       "Services Australia's reply submissions in support of \
       \confidentiality order application"
-  , File A "2026-06-17" Nothing
+  , File A "2026-06-17" (Just "2026-06-17-FT-submissions-confidentiality-order-corrected.pdf")
       "Re-filing of my submissions of 2026-06-10 with minor corrections"
-  , File A "2026-06-10" Nothing
+  , File A "2026-06-10" (Just "2026-06-10-FT-submissions-confidentiality-order.pdf")
       "Tweedale submissions opposing the confidentiality order application \
       \(re-filed on 2026-06-17 with minor corrections)"
   , File T "2026-05-29" Nothing

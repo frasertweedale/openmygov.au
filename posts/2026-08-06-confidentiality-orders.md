@@ -8,9 +8,14 @@ nevertheless pursuaded to deprive me of knowledge about the case I
 have to meet.  I break it down in this post.
 
 You can [read the decision][decision]{target=_blank}, which the
-Tribunal delivered on Monday 3 August, 2026.
+Tribunal delivered on Monday 3 August, 2026.  I have also published
+[my submissions][a-submissions]{target=_blank} and [my
+affidavit][a-affidavit]{target=_blank} setting out information about
+the App that is already in the public domain.
 
 [decision]: ../files/2026-08-03-ART-confidentiality-order-decision.pdf
+[a-submissions]: ../files/2026-06-17-FT-submissions-confidentiality-order-corrected.pdf
+[a-affidavit]: ../files/2026-07-02-FT-affidavit-public-domain.pdf
 
 ## What did Services Australia want to hide?
 

@@ -1,9 +1,9 @@
 # Tribunal grants confidentiality order over critical evidence
 
-More than a month after the hearing, the Tribunal has finally
+[More than a month after the hearing, the Tribunal has finally
 decided on Services Australia's confidentiality orders application.
-It was the expected result, and not a good one for us.  The
-Respondent's arguments are strange, but the Tribunal was
+It was the expected result, and not a good one for us.]{.abstract}
+The Respondent's arguments are strange, but the Tribunal was
 nevertheless pursuaded to deprive me of knowledge about the case I
 have to meet.  I break it down in this post.
 

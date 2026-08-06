@@ -1,15 +1,20 @@
 {-# LANGUAGE OverloadedStrings #-}
 
+import Control.Applicative ((<|>))
+import Control.Monad ((<=<))
+import Data.Monoid (First(..))
+
 import Text.Pandoc.Definition
-  ( Pandoc(..), Block(Header, Plain), Inline(..) )
+  ( Pandoc(..), Block(Header, Para, Plain), Inline(..) )
 import Text.Pandoc.Walk (query, walk)
 import Hakyll
 
 import Files
 
 
-siteTitle :: String
+siteTitle, siteRoot :: String
 siteTitle = "END SECURITY BY OBSCURITY"
+siteRoot = "https://openmygov.au"
 
 
 main :: IO ()
@@ -57,6 +62,7 @@ main = hakyll $ do
             render f = fmap writePandoc . makeItem . Pandoc mempty . pure . Plain . f
           _ <- render removeFormatting h1 >>= saveSnapshot "title"
           _ <- render id h1 >>= saveSnapshot "fancyTitle"
+          _ <- traverse (saveSnapshot "abstract" <=< render id) (abstract pandoc)
           pure $ addSectionLinks pandoc
         )
 
@@ -66,6 +72,9 @@ main = hakyll $ do
       posts <- take 3 <$> loadRecentPosts
       let postContext =
             listField "posts" context (pure posts)
+            <> jsonldField "jsonld" context
+            <> openGraphField "opengraph" context
+            <> twitterCardField "twitter" context
             <> context
       ident <- getUnderlying
       loadBody (setVersion (Just "recent") ident)
@@ -117,6 +126,9 @@ context =
   <> snapshotField "fancyTitle" "fancyTitle"
   <> constField "siteTitle" siteTitle
   <> urlFieldNoVersion "url0"
+  <> snapshotField "og-description" "abstract"
+  <> constField "twitter-creator" "@hackuador"
+  <> constField "root" siteRoot
   <> defaultContext
 
 
@@ -166,3 +178,21 @@ addSectionLinks = walk f where
       let link = Link ("", ["section"], []) [Str "§"] ("#" <> idAttr, "")
       in Header n attr (inlines <> [Space, link])
   f x = x
+
+
+-- | Extract the abstract, or autogenerate one (badly).
+--
+-- Looks for a Span with class "abstract".  If not found,
+-- takes the first paragraph that immediately precedes a
+-- header.  Strips all formatting.
+--
+abstract :: Pandoc -> Maybe [Inline]
+abstract (Pandoc _ blocks) =
+  removeFormatting <$> (markedUp blocks <|> fallback blocks)
+  where
+  markedUp = fmap getFirst . query $ \inl -> case inl of
+    Span (_id, cls, _attrs) inls | "abstract" `elem` cls -> First (Just inls)
+    _ -> mempty
+  fallback (Para inlines : Header _ _ _ : _) = Just inlines
+  fallback (_h : t) = fallback t
+  fallback [] = Nothing

@@ -5,6 +5,9 @@
         <title>$siteTitle$ - $title$</title>
         <link rel="stylesheet" href="/css/default.css">
         <script src="/js/copy-button.js"></script>
+        $if(jsonld)$$jsonld("embed")$$endif$
+        $if(opengraph)$$opengraph$$endif$
+        $if(twitter)$$twitter$$endif$
     </head>
     <body>
         <div id="header">

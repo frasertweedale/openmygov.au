@@ -23,7 +23,12 @@ fileContext =
 
 fileListART :: [File]
 fileListART =
-  [ File T "2026-08-03" (Just "2026-08-03-ART-confidentiality-order-decision.pdf")
+  [ File R "2026-08-25" Nothing
+      "Further affidavit of Mr Garrett McDonald, General Manager Cyber Security, \
+      \Services Australia"
+  , File T "2026-08-10" (Just "2026-08-10-ART-listing-notice-substantive-hearing.pdf")
+      "ART listing notice for substantive hearing, 2–4 September 2026"
+  , File T "2026-08-03" (Just "2026-08-03-ART-confidentiality-order-decision.pdf")
       "ART decision and reasons granting confidentiality order \
       \application over McDonald closed affidavit"
   , File A "2026-07-31" Nothing

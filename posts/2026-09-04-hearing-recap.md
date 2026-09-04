@@ -94,6 +94,21 @@ in a few weeks.  It went as well as we could have hoped - maybe
 better!  Thanks to all my supporters, and my legal team Jason, EJ
 and Tom.
 
+::: note
+
+Something funny that happened on Day 3: During cross-examination of
+Vanessa, counsel for Services Australia requested to tender into
+evidence the full text of [RFC 6238] (TOTP) and [RFC 4226] (HOTP).
+Goodness only knows why.  The Deputy Presidents took one glance at
+them and, noting that receiving the documents into evidence meant
+they would be *required* to read them in entirety, refused to accept
+them.  A wise move!
+
+[RFC 6238]: https://datatracker.ietf.org/doc/html/rfc6238
+[RFC 4226]: https://datatracker.ietf.org/doc/html/rfc4226
+
+:::
+
 ## What's next?
 
 The Tribunal has agreed to receive closing submissions in writing.

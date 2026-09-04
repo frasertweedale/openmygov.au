@@ -109,7 +109,7 @@ main = hakyll $ do
     -- dependent pages
     compile $ makeItem ()
 
-  match "files/*" $ do
+  match ("files/*" .||. "img/*") $ do
     route idRoute
     compile copyFileCompiler
 

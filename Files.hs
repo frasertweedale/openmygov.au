@@ -57,7 +57,7 @@ fileListART =
   , File A "2026-06-10" (Just "2026-06-10-FT-submissions-confidentiality-order.pdf")
       "Tweedale submissions opposing the confidentiality order application \
       \(re-filed on 2026-06-17 with minor corrections)"
-  , File T "2026-05-29" Nothing
+  , File T "2026-05-29" (Just "2026-05-29-ART-resumed-confidentiality-hearing-listing.pdf")
       "ART listing notice for resumed confidentiality order hearing, \
       \Thursday 9 July, 09:00"
   , File R "2026-05-28" Nothing
@@ -68,10 +68,10 @@ fileListART =
   , File R "2026-05-25" Nothing
       "Open affidavit of Mr Garrett McDonald, General Manager Cyber Security, \
       \Services Australia"
-  , File R "2026-05-25" Nothing
+  , File R "2026-05-25" Nothing -- and never
       "Closed affidavit of Mr Garrett McDonald, General Manager Cyber Security, \
       \Services Australia (redacted version received 2026-08-04)."
-  , File T "2026-04-21" Nothing
+  , File T "2026-04-21" (Just "2026-04-21-ART-listing-substantive-hearing.pdf")
       "ART lists substantive hearing for 2–4 September"
   , File T "2026-04-14" (Just "2026-04-14-ART-updated-listing-confidentiality-order-hearing.pdf")
       "ART moves confidentiality order hearing to Friday 2026-05-29, 09:00"

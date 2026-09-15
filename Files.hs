@@ -23,21 +23,30 @@ fileContext =
 
 fileListART :: [File]
 fileListART =
-  [ File R "2026-08-25" Nothing
+  [ File J "2026-08-25" Nothing
+      "Joint hearing bundle (open affidavits and submissions of both parties)"
+  , File J "2026-08-25" (Just "2026-08-25-joint-bundle-of-authorities.pdf")
+      "Joint bundle of authorities for both parties (legislation, case law, \
+      \and other binding instruments)"
+  , File R "2026-08-25" (Just "2026-08-25-SA-McDonald-reply-affidavit.pdf")
       "Further affidavit of Mr Garrett McDonald, General Manager Cyber Security, \
       \Services Australia"
   , File T "2026-08-10" (Just "2026-08-10-ART-listing-notice-substantive-hearing.pdf")
       "ART listing notice for substantive hearing, 2–4 September 2026"
+  , File R "2026-08-04" (Just "2026-08-04-SA-McDonald-closed-affidavit-redacted.pdf")
+      "Redacted version of 2026-05-25 closed affidavit of \
+      \Mr Garrett McDonald, CISO and General Manager Cyber Security Services Australia, \
+      \pursuant to ART orders"
   , File T "2026-08-03" (Just "2026-08-03-ART-confidentiality-order-decision.pdf")
       "ART decision and reasons granting confidentiality order \
       \application over McDonald closed affidavit"
-  , File A "2026-07-31" Nothing
+  , File A "2026-07-31" (Just "2026-07-31-FT-SFIC.pdf")
       "Tweedale Statement of Facts Issues and Contentions"
-  , File A "2026-07-31" Nothing
+  , File A "2026-07-29" (Just "2026-07-29-FT-affidavit-numbered.pdf")
       "Tweedale affidavit"
-  , File A "2026-07-31" Nothing
+  , File A "2026-07-31" (Just "2026-07-31-Teague-report-FILED.pdf")
       "Expert witness report: Prof. Vanessa Teague"
-  , File A "2026-07-31" Nothing
+  , File A "2026-07-31" (Just "2026-07-31-Serwylo-report-FILED.pdf")
       "Expert witness report: Dr Peter Serwylo"
   , File T "2026-07-09" (Just "2026-07-09-ART-directions-confidentiality-timeline.pdf")
       "ART Direction that Respondent must by 15 July give to Tribunal a \
@@ -65,7 +74,7 @@ fileListART =
       \order application"
   , File R "2026-05-26" Nothing
       "Services Australia's Statement of Facts, Issues and Contentions (SFIC)"
-  , File R "2026-05-25" Nothing
+  , File R "2026-05-25" (Just "2026-05-25-SA-McDonald-open-affidavit.pdf")
       "Open affidavit of Mr Garrett McDonald, General Manager Cyber Security, \
       \Services Australia"
   , File R "2026-05-25" Nothing -- and never
